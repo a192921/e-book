@@ -18,6 +18,14 @@
     text-align: center;
 }
 
+#navbar-nav-ul ul .small_li {
+    width: 100px;
+}
+
+#navbar-nav-ul ul li .text {
+    margin-top: 16px;
+}
+
 #navbar-nav-ul ul li div a {
     color: rgb(143, 143, 145);
     font-size: 16px;
@@ -70,28 +78,32 @@
     text-decoration: none;
 }
 
+#center_content {
+    margin-top: 50px;
+}
+
 #search_treeview {
-    margin-left: 10px;
+    margin-left: 0px;
     border-right: 2px solid rgb(242, 243, 246);
 }
 
 #shadow {
     background-color: white;
     height: 60px;
-    box-shadow: 5px 5px 10px rgb(240, 240, 240);
+    box-shadow: px 3px 3px rgb(240, 240, 240);
 }
 
 #shadow div {
-    padding: 10px 15px 10px 15px;
+    padding: 10px 15px 10px 30px;
 }
 
 #shadow div input {
     float: left;
     height: 40px;
-    width: 95%;
+    width: 93%;
     border: none;
     border-top-left-radius: 5px;
-    border-top-left-radius: px;
+    border-top-left-radius: 5px;
     padding-left: 10px;
     background-color: rgb(248, 249, 252);
     color: rgb(79, 80, 98);
@@ -100,7 +112,7 @@
 
 #shadow div button {
     float: right;
-    width: 5%;
+    width: 7%;
     height: 40px;
     border: none;
     background-color: rgb(87, 113, 226);
@@ -111,10 +123,11 @@
 #list_treeview {
     height: 150px;
     color: #000000;
-    padding: 15px;
+    padding: 10px 15px 15px 30px;
     overflow: scroll;
+    margin-top: 2px;
     /*border-right: 2px solid rgb(242, 243, 246);*/
-    border-bottom: 2px solid rgb(242, 243, 246);
+    border-bottom: 1px solid rgb(242, 243, 246);
 }
 
 ul,
@@ -185,9 +198,8 @@ ul,
 }
 
 #filter_list {
-    height: 400px !important;
     color: #000000;
-    padding: 0px 15px 15px 15px;
+    padding: 0px 15px 15px 0px;
     overflow: scroll;
     /*border-right: 2px solid rgb(242, 243, 246);
     border-bottom: 2px solid rgb(242, 243, 246);*/
@@ -207,7 +219,7 @@ ul,
 }
 
 #div_left_list {
-    height: 630px !important;
+    /*height: 1000px !important;*/
     overflow: scroll;
     margin-left: 0px;
     padding-left: 0px;
@@ -216,29 +228,49 @@ ul,
 #div_right {
     margin-right: 0px;
     padding-right: 0px;
+    padding-left: 0px;
+}
+
+#search_and_filter {
+    padding-left: 30px;
 }
 
 #search_filter {
-    margin: 10px 20px 0px 0px;
+    margin: 10px 20px 0px 20px;
+    height: 50px;
 }
 
 #search_filter_left {
     float: left;
-    margin: 0px;
+    width: 7%;
+    margin-left: 0px !important;
+    padding-left: 0px;
 }
 
 #search_filter_left button {
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     width: 65px;
-    margin: 0px 0px 0px 5px;
+    margin: 0px 0px 0px 20px;
     border: solid 1px rgb(211, 211, 211);
 }
 
 #search_filter_right {
     float: right;
-    width: 90%;
-    margin-left: 0px;
+    width: 92%;
+    margin-left: 0px !important;
+}
+
+#search_filter_right input {
+    float: left;
+    height: 40px;
+    width: 93%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-left: 10px;
+    background-color: rgb(248, 249, 252);
+    color: rgb(79, 80, 98);
 }
 
 #left_list {
@@ -279,7 +311,7 @@ ul,
     font-style: italic;
     line-height: 28px;
     font-size: 16px;
-    border: 2px rgb(250, 191, 197) solid;
+    border: 1px rgb(250, 191, 197) solid;
     border-radius: 3px;
     color: rgb(234, 101, 202);
     background-color: rgb(252, 212, 216);
@@ -292,7 +324,98 @@ ul,
     font-style: italic;
     line-height: 28px;
     font-size: 16px;
-    border: 2px rgb(188, 218, 255) solid;
+    border: 1px rgb(188, 218, 255) solid;
+    border-radius: 3px;
+    color: rgb(87, 152, 252);
+    background-color: rgb(209, 229, 255);
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_lightblue {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #d2f9ff solid;
+    border-radius: 3px;
+    color: #51a8ff;
+    background-color: #defbff;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_lightyellow {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #ffeeba solid;
+    border-radius: 3px;
+    color: #ffc20b;
+    background-color: #fff3cd;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_green {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #c3e6cb solid;
+    border-radius: 3px;
+    color: #95c7a0;
+    background-color: #e4ffeb;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_yellow {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #fade03 solid;
+    border-radius: 3px;
+    color: #b2a220;
+    background-color: #fce957;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_gray {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #d6d8db solid;
+    border-radius: 3px;
+    color: #545666;
+    background-color: #e2e3e5;
+    padding-left: 3px;
+    padding-right: 2px;
+    text-align: center;
+}
+
+#description .description_incloud_pink {
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px rgb(250, 191, 197) solid;
+    border-radius: 3px;
+    color: rgb(234, 101, 202);
+    background-color: rgb(252, 212, 216);
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_incloudblue {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px rgb(188, 218, 255) solid;
     border-radius: 3px;
     color: rgb(87, 152, 252);
     background-color: rgb(209, 229, 255);
@@ -307,3 +430,172 @@ ul,
     margin-left: -1em;
     margin-bottom: 0px;
 }
+
+#fix_up_button {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 50px;
+    left: 51%;
+}
+
+#fix_up_button button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color: #a6b8ef;
+    border-radius: 5px
+}
+
+#fix_right_button {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    bottom: 0px;
+    left: 58%;
+    padding: 30px 20px 30px 20px;
+    width: 42%;
+}
+
+#fix_right_button .year {
+    float: left;
+    margin-top: 5px;
+    /* margin-left: 5px;
+    margin-right: 10px; */
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: #f75b36;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #f75b36;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.container .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+#search_icds input {
+    height: 35px;
+    margin-right: 0px;
+    width: 70%;
+    float: left;
+    border: none;
+    background-color: #fff9f7;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-left: 10px;
+    color: rgb(79, 80, 98);
+    font-size: 16px;
+}
+
+#search_icds .submit {
+    height: 35px;
+    width: 20%;
+    float: left;
+    margin-left: 0px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Clearable text inputs */
+
+.clearable {
+    background: #fff url(http://i.stack.imgur.com/mJotv.gif) no-repeat right -10px center;
+    border: 1px solid #999;
+    padding: 3px 18px 3px 4px;
+    /* Use the same right padding (18) in jQ! */
+    border-radius: 3px;
+    transition: background 0.4s;
+}
+
+.clearable.x {
+    background-position: right 15px center;
+}
+
+
+/* (jQ) Show icon */
+
+.clearable.onX {
+    cursor: pointer;
+}
+
+
+/* (jQ) hover cursor style */
+
+.clearable::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+
+/* Remove IE default X */
