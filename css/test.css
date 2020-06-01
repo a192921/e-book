@@ -255,6 +255,10 @@ ul,
     border: solid 1px rgb(211, 211, 211);
 }
 
+#search_filter_left button a{
+    color: rgb(211, 211, 211);
+}
+
 #search_filter_right {
     float: right;
     width: 92%;
@@ -271,6 +275,10 @@ ul,
     padding-left: 10px;
     background-color: rgb(248, 249, 252);
     color: rgb(79, 80, 98);
+}
+
+#search_filter_right button{
+    width: 7%;
 }
 
 #left_list {
@@ -302,7 +310,7 @@ ul,
 }
 
 #description #title {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
     font-weight: bold;
 }
@@ -450,11 +458,11 @@ ul,
 #fix_right_button {
     height: 100px;
     background-color: rgba(255, 255, 255, 0.9);
-    position: fixed;
+    /* position: fixed; */
     bottom: 0px;
     left: 58%;
     padding: 30px 20px 30px 20px;
-    width: 42%;
+    width: 100%;
 }
 
 #fix_right_button .year {
@@ -462,6 +470,7 @@ ul,
     margin-top: 5px;
     /* margin-left: 5px;
     margin-right: 10px; */
+    width: 11% !important;
 }
 
 .container {
@@ -539,6 +548,10 @@ ul,
     height: 8px;
     border-radius: 50%;
     background: white;
+}
+
+#search_icds {
+    float: left;
 }
 
 #search_icds input {
