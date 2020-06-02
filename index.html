@@ -23,34 +23,34 @@
         <div class="col-lg-12 col-md-12 col-sm-12">
             <nav class="navbar navbar-expand-lg bg-light fixed-top">
                 <div id="header_icon" style="width: 170px;">
-                    <img src="./img/ebookicon.png" width="25" style="float: left;padding-top: 2px;">
-                    <a class="navbar-brand"><strong>E-book</strong></a>
+                    <img src="./img//Logo.svg" width="100%" style="float: left;padding-top: 2px;">
+                    <!-- <a class="navbar-brand"><strong>E-book</strong></a> -->
                 </div>
                 <div id="navbar-nav-ul">
                     <ul class="nav navbar-nav">
-                        <li class="small_li">
+                        <li class="small_li" style="width:107px;">
                             <div class="text"><a>Index</a></div>
-                            <div id="bottom_line"></div>
+                            <!-- <div id="bottom_line"></div> -->
                         </li>
-                        <li class="small_li">
+                        <li class="small_li" style="width:135px;">
                             <div class="text"><a>Diagnosis</a></div>
-                            <div id="bottom_line"></div>
+                            <!-- <div id="bottom_line"></div> -->
                         </li>
-                        <li>
+                        <li style="width:173px;">
                             <div class="text"><a>External Cause</a></div>
-                            <div id="bottom_line"></div>
+                            <!-- <div id="bottom_line"></div> -->
                         </li>
-                        <li class="small_li">
+                        <li class="small_li" style="width:139px;">
                             <div class="text"><a>Neoplasm</a></div>
-                            <div id="bottom_line"></div>
+                            <!-- <div id="bottom_line"></div> -->
                         </li>
-                        <li>
+                        <li style="width:164px;">
                             <div class="text"><a>ICD0 to ICD10</a></div>
                             <div id="bottom_line"></div>
                         </li>
-                        <li class="small_li">
+                        <li class="small_li" style="width:111px;">
                             <div class="text"><a>虛擬碼</a></div>
-                            <div id="bottom_line"></div>
+                            <!-- <div id="bottom_line"></div> -->
                         </li>
 
                     </ul>
@@ -67,7 +67,8 @@
         <div class="col-lg-7 col-md-7 col-sm-7" id="div_right">
             <div id="search_treeview">
                 <div id="shadow">
-                    <div>
+                    <div id="shadow_left" style="width: 7%;float: left;"><button style="border: solid 1px rgb(211, 211, 211);height: 36px;width: 90%;border-radius: 5px;margin: 0px 50px 0px 0px;background-color: rgb(255, 255, 255);"><img src="./img/Path 15.svg"></button></div>
+                    <div id="shadow_right" style="width: 93%;float: right;">
                         <!-- <input class="clearable" type="text" name="" value="" placeholder="" /> -->
                         <input class="clearable" type="text" placeholder="Type at least 4 characters" name="search">
                         <button type="submit"><img src="./img/search.svg" height="20"></button>
@@ -76,9 +77,9 @@
                 <div>
                     <div id="list_treeview">
                         <ul id="myUL">
-                            <li><span class="caret"><a class="a_type1">Hyperactive</a><a class="a_type2"> (Hyperactive) </a><a class="a_type1">hyperactive F90.0</a><img src="./img/treeview_icon.png" height="24px"></span>
+                            <li><span class="caret"><a class="a_type1">Hyperactive</a><a class="a_type2"> (Hyperactive) </a><a class="a_type1">hyperactive F90.0</a><img class="input_btn" src="./img/input btn.svg"></span>
                                 <ul class="nested">
-                                    <li><span class="caret"><a class="a_type1">Hyperactive </a><a class="a_type1">hyperactive F90.0</a><img src="./img/treeview_icon.png" height="25px"></span>
+                                    <li><span class="caret"><a class="a_type1">Hyperactive </a><a class="a_type1">hyperactive F90.0</a><img class="input_btn" src="./img/input btn.svg"></span>
                                         <ul class="nested">
                                             <li><span class="caret"><a class="a_type1">Hyperactive </a><a class="a_type1">hyperactive F90.0</a></span>
                                                 <ul class="nested">
@@ -97,9 +98,9 @@
 
                 <div id="search_and_filter">
                     <div id="search_filter">
-                        <div id="search_filter_left">
+                        <!-- <div id="search_filter_left">
                             <button><a><strong><</strong></a></button>
-                        </div>
+                        </div> -->
                         <div id="search_filter_right">
                             <input class="clearable" type="text" placeholder="依文字尋找或塞選" name="search">
                             <button type="submit" onclick="myFunction()" style="width: 7%;"><img src="./img/filter.svg" height="20"></button>
@@ -108,20 +109,20 @@
                     <div id="filter_list">
                         <ul id="filter_list_text">
                             <li id="li_1"><a class="type_blue">Hyperactive </a>
-                                <a class="type_black"></a>(gastric) <a class="type_blue">K31.89</a><img src="./img/treeview_icon.png" height="24px"></li>
-                            <li><a class="type_blue">Hyperactive, hyperactivity F90.9</a><img src="./img/treeview_icon.png" height="24px"></li>
+                                <a class="type_black"></a>(gastric) <a class="type_blue">K31.89</a><img img class="input_btn" src="./img/input btn.svg"></li>
+                            <li><a class="type_blue">Hyperactive, hyperactivity F90.9</a><img class="input_btn" src="./img/input btn.svg"></li>
                             <li><a class="type_blue">Hyperacsis</a><a class="type_black"> H93.23-Hypercholesterinemia - see </a><a class="type_blue">Hypercholesterinemia</a></li>
-                            <li><a class="type_blue">Hypercholesterinemia</a><a class="type_black"> (essential) (familial) (hereditary) (primary) (pure) </a><a class="type_blue">E78.0 </a><img src="./img/treeview_icon.png" height="24px"></li>
+                            <li><a class="type_blue">Hypercholesterinemia</a><a class="type_black"> (essential) (familial) (hereditary) (primary) (pure) </a><a class="type_blue">E78.0 </a><img img class="input_btn" src="./img/input btn.svg"></li>
                             <li><a class="type_blue">Hyperactive </a>
-                                <a class="type_black"></a>(gastric) <a class="type_blue">K31.89</a><img src="./img/treeview_icon.png" height="24px"></li>
-                            <li><a class="type_blue">Hyperactive, hyperactivity F90.9</a><img src="./img/treeview_icon.png" height="24px"></li>
+                                <a class="type_black"></a>(gastric) <a class="type_blue">K31.89</a><img img class="input_btn" src="./img/input btn.svg"></li>
+                            <li><a class="type_blue">Hyperactive, hyperactivity F90.9</a><img img class="input_btn" src="./img/input btn.svg"></li>
                             <li><a class="type_blue">Hyperacsis</a><a class="type_black"> H93.23-Hypercholesterinemia - see </a><a class="type_blue">Hypercholesterinemia</a></li>
-                            <li><a class="type_blue">Hypercholesterinemia</a><a class="type_black"> (essential) (familial) (hereditary) (primary) (pure) </a><a class="type_blue">E78.0 </a><img src="./img/treeview_icon.png" height="24px"></li>
-                            <li><a class="type_blue">Hyperactive, hyperactivity F90.9</a><img src="./img/treeview_icon.png" height="24px"></li>
+                            <li><a class="type_blue">Hypercholesterinemia</a><a class="type_black"> (essential) (familial) (hereditary) (primary) (pure) </a><a class="type_blue">E78.0 </a><img img class="input_btn" src="./img/input btn.svg"></li>
+                            <li><a class="type_blue">Hyperactive, hyperactivity F90.9</a><img img class="input_btn" src="./img/input btn.svg"></li>
                             <li><a class="type_blue">Hyperacsis</a><a class="type_black"> H93.23-Hypercholesterinemia - see </a><a class="type_blue">Hypercholesterinemia</a></li>
-                            <li><a class="type_blue">Hypercholesterinemia</a><a class="type_black"> (essential) (familial) (hereditary) (primary) (pure) </a><a class="type_blue">E78.0 </a><img src="./img/treeview_icon.png" height="24px"></li>
+                            <li><a class="type_blue">Hypercholesterinemia</a><a class="type_black"> (essential) (familial) (hereditary) (primary) (pure) </a><a class="type_blue">E78.0 </a><img img class="input_btn" src="./img/input btn.svg"></li>
                             <li><a class="type_blue">Hyperacsis</a><a class="type_black"> H93.23-Hypercholesterinemia - see </a><a class="type_blue">Hypercholesterinemia</a></li>
-                            <li><a class="type_blue">Hypercholesterinemia</a><a class="type_black"> (essential) (familial) (hereditary) (primary) (pure) </a><a class="type_blue">E78.0 </a><img src="./img/treeview_icon.png" height="24px"></li>
+                            <li><a class="type_blue">Hypercholesterinemia</a><a class="type_black"> (essential) (familial) (hereditary) (primary) (pure) </a><a class="type_blue">E78.0 </a><img img class="input_btn" src="./img/input btn.svg"></li>
                             <li><a class="type_blue">Hyperacsis</a><a class="type_black"> H93.23-Hypercholesterinemia - see </a><a class="type_blue">Hypercholesterinemia</a></li>
 
                         </ul>
@@ -135,11 +136,13 @@
         <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
         <div id="div_left_list" class="col-lg-5 col-md-5 col-sm-5">
+
+
             <div id="left_list">
                 <div class="left_list_item">
 
                     <div id="k_id">K99.99
-                        <img src="./img/treeview_icon.png" height="30px">
+                        <img src="./img/input btn.svg" height="30px">
                     </div>
                     <div id="description">
                         <span id="title">Other diseases of
@@ -162,7 +165,7 @@
             <div id="left_list">
                 <div class="left_list_item">
                     <div id="k_id">K99.99
-                        <img src="./img/treeview_icon.png" height="30px">
+                        <img src="./img/input btn.svg" height="30px">
                     </div>
                     <div id="description">
                         <span id="title">Other diseases of
@@ -185,7 +188,7 @@
             <div id="left_list">
                 <div class="left_list_item">
                     <div id="k_id">K99.99
-                        <img src="./img/treeview_icon.png" height="30px">
+                        <img src="./img/input btn.svg" height="30px">
                     </div>
                     <div id="description">
                         <span id="title">Other diseases of
@@ -209,7 +212,7 @@
             <div id="left_list">
                 <div class="left_list_item">
                     <div id="k_id">K99.99
-                        <img src="./img/treeview_icon.png" height="30px">
+                        <img src="./img/input btn.svg" height="30px">
                     </div>
                     <div id="description">
                         <span id="title">Other diseases of
@@ -232,7 +235,7 @@
             <div id="left_list">
                 <div class="left_list_item">
                     <div id="k_id">K99.99
-                        <img src="./img/treeview_icon.png" height="30px">
+                        <img src="./img/input btn.svg" height="30px">
                     </div>
                     <div id="description">
                         <span id="title">Other diseases of
@@ -255,7 +258,7 @@
             <div id="left_list">
                 <div class="left_list_item">
                     <div id="k_id">K99.99
-                        <img src="./img/treeview_icon.png" height="30px">
+                        <img src="./img/input btn.svg" height="30px">
                     </div>
                     <div id="description">
                         <span id="title">Other diseases of
@@ -278,7 +281,7 @@
             <div id="left_list">
                 <div class="left_list_item">
                     <div id="k_id">K99.99
-                        <img src="./img/treeview_icon.png" height="30px">
+                        <img src="./img/input btn.svg" height="30px">
                     </div>
                     <div id="description">
                         <span id="title">Other diseases of
@@ -301,7 +304,7 @@
             <div id="left_list">
                 <div class="left_list_item">
                     <div id="k_id">K99.99
-                        <img src="./img/treeview_icon.png" height="30px">
+                        <img src="./img/input btn.svg" height="30px">
                     </div>
                     <div id="description">
                         <span id="title">Other diseases of
@@ -324,7 +327,53 @@
             <div id="left_list">
                 <div class="left_list_item">
                     <div id="k_id">K99.99
-                        <img src="./img/treeview_icon.png" height="30px">
+                        <img src="./img/input btn.svg" height="30px">
+                    </div>
+                    <div id="description">
+                        <span id="title">Other diseases of
+    esophagus</span><br />
+                        <span id="title">胃及十二指腸其他疾病</span><br />
+                        <span class="description_pink">
+    incl.</span><br />
+                        <ul>
+                            <li>function disorders of stomach</li>
+                        </ul>
+                        <span class="description_blue">
+    EXcl.2</span><br />
+                        <ul>
+                            <li>diabetic gastroparesos (E08.43, E09.43,E11.43, E13.43)</li>
+                            <li>diabetic gastroparesos (K57.00-K57.13)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="left_list">
+                <div class="left_list_item">
+                    <div id="k_id">K99.99
+                        <img src="./img/input btn.svg" height="30px">
+                    </div>
+                    <div id="description">
+                        <span id="title">Other diseases of
+    esophagus</span><br />
+                        <span id="title">胃及十二指腸其他疾病</span><br />
+                        <span class="description_pink">
+    incl.</span><br />
+                        <ul>
+                            <li>function disorders of stomach</li>
+                        </ul>
+                        <span class="description_blue">
+    EXcl.2</span><br />
+                        <ul>
+                            <li>diabetic gastroparesos (E08.43, E09.43,E11.43, E13.43)</li>
+                            <li>diabetic gastroparesos (K57.00-K57.13)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="left_list">
+                <div class="left_list_item">
+                    <div id="k_id">K99.99
+                        <img src="./img/input btn.svg" height="30px">
                     </div>
                     <div id="description">
                         <span id="title">Other diseases of
@@ -345,6 +394,10 @@
                 </div>
             </div>
             <div class="position-fixed" id="fix_right_button">
+                <div id="search_icds">
+                    <input id="icd" class="clearable" type="text" name="" value="" placeholder="Search for ICDs" />
+                    <button class="submit" type="submit"><img src="./img/search.svg" height="20"></button>
+                </div>
                 <div class="year">
                     <label class="container">2014
                      <input type="radio" checked="checked" name="radio">
@@ -357,10 +410,7 @@
                      <span class="checkmark"></span>
                    </label>
                 </div>
-                <div id="search_icds">
-                    <input id="icd" class="clearable" type="text" name="" value="" placeholder="Search for ICDs" />
-                    <button class="submit" type="submit"><img src="./img/search.svg" height="20"></button>
-                </div>
+
             </div>
 
 
@@ -368,7 +418,7 @@
         </div>
 
     </div>
-    
+
 
 
 
@@ -395,8 +445,8 @@
             });
         }
 
-        $('#div_left_list').height((screen.height * 0.9) - 50);
-        $('#filter_list').height(((screen.height * 0.9) - 50) - 293);
+        $('#div_left_list').height((screen.height * 0.9) - 56);
+        $('#filter_list').height(((screen.height * 0.9) - 56) - 293);
         $('#fix_right_button').width((screen.width / 12) * 5);
 
 
