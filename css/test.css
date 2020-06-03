@@ -94,11 +94,15 @@
     text-decoration: none;
 }
 
-#center_content {
-    margin-top: 56px;
-}
 
-#search_treeview {
+/* 
+#center_content {
+    margin-top: 56px; 
+
+
+}*/
+
+*/ #search_treeview {
     margin-left: 0px;
     border-right: 2px solid rgb(242, 243, 246);
 }
@@ -268,8 +272,9 @@ ul,
 }
 
 #search_filter {
-    margin: 10px 20px 0px 20px;
+    margin: 10px 20px 0px 0px;
     height: 50px;
+    padding: 0px;
 }
 
 
