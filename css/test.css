@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 .navbar {
     background-color: rgb(58, 59, 75) !important;
     height: 56px;
@@ -94,15 +98,11 @@
     text-decoration: none;
 }
 
-
-/* 
 #center_content {
-    margin-top: 56px; 
+    margin-top: 56px;
+}
 
-
-}*/
-
-*/ #search_treeview {
+#search_treeview {
     margin-left: 0px;
     border-right: 2px solid rgb(242, 243, 246);
 }
@@ -117,20 +117,26 @@
     box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
 }
 
-
-/* #shadow div {
-    
-} */
+#shadow_right {
+    height: 36px;
+    border: 1px solid #D1D3E0;
+    border-radius: 4px;
+    padding: 1px;
+}
 
 #shadow_right input {
     float: left;
-    height: 36px;
+    height: 100%;
     width: 93%;
     border: none;
-    border-top-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border-right: none;
+    border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /* border-top-right-radius: none;
+    border-bottom-right-radius: none; */
     padding-left: 10px;
-    background-color: rgb(248, 249, 252);
+    /* background-color: rgb(248, 249, 252); */
     color: rgb(79, 80, 98);
     font-size: 16px;
 }
@@ -138,11 +144,15 @@
 #shadow_right button {
     float: right;
     width: 7%;
-    height: 36px;
+    height: 100%;
     border: none;
-    background-color: rgb(87, 113, 226);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    background-color: #fff;
+    /* background-color: rgb(87, 113, 226); */
+    /* border-top-right-radius: 5px; */
+    /* border-right: 1px solid #D1D3E0;
+    border-top: 1px solid #D1D3E0;
+    border-bottom: 1px solid #D1D3E0;
+    border-bottom-right-radius: 5px; */
 }
 
 #list_treeview {
@@ -237,6 +247,7 @@ ul,
     color: #000000;
     padding: 0px 15px 15px 0px;
     overflow: scroll;
+    height: 58vh;
     /*border-right: 2px solid rgb(242, 243, 246);
     border-bottom: 2px solid rgb(242, 243, 246);*/
 }
@@ -255,10 +266,12 @@ ul,
 }
 
 #div_left_list {
-    /*height: 1000px !important;*/
     overflow: scroll;
     margin-left: 0px;
     padding-left: 0px;
+    height: 92vh;
+    background-color: rgba(0, 0, 0, 0.02);
+    /* background-color: green; */
 }
 
 #div_right {
@@ -272,9 +285,8 @@ ul,
 }
 
 #search_filter {
-    margin: 10px 20px 0px 0px;
+    margin: 10px 13px 0px 0px;
     height: 50px;
-    padding: 0px;
 }
 
 
@@ -306,18 +318,35 @@ ul,
 
 #search_filter_right input {
     float: left;
-    height: 40px;
+    height: 36px;
     width: 93%;
     border: none;
-    border-top-left-radius: 5px;
-    border-top-left-radius: 5px;
+    border: 1px solid #D1D3E0;
+    border-right: none;
+    border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /* border-top-right-radius: none;
+    border-bottom-right-radius: none; */
     padding-left: 10px;
-    background-color: rgb(248, 249, 252);
+    /* background-color: rgb(248, 249, 252); */
     color: rgb(79, 80, 98);
+    font-size: 16px;
 }
 
 #search_filter_right button {
+    float: right;
     width: 7%;
+    height: 36px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    /* background-color: rgb(87, 113, 226); */
+    border-top-right-radius: 5px;
+    border-right: 1px solid #D1D3E0;
+    border-top: 1px solid #D1D3E0;
+    border-bottom: 1px solid #D1D3E0;
+    border-bottom-right-radius: 5px;
 }
 
 #left_list {
@@ -327,25 +356,28 @@ ul,
 
 .left_list_item {
     width: 100%;
-    border-top: 1px solid rgb(0, 64, 255);
+    border-top: 1px solid #D1D3E0;
     margin-top: 5px;
     float: left;
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #k_id {
     height: 10;
-    width: 15%;
+    width: 20%;
     float: left;
     font-size: 18px;
-    padding-left: 2px;
+    padding: 2px;
     height: 100%;
 }
 
 #description {
     float: left;
+    width: 80%;
 }
 
 #description #title {
@@ -478,7 +510,8 @@ ul,
     margin-bottom: 0px;
 }
 
-#fix_up_button {
+
+/* #fix_up_button {
     height: 50px;
     width: 50px;
     position: fixed;
@@ -492,7 +525,7 @@ ul,
     width: 50px;
     background-color: #a6b8ef;
     border-radius: 5px
-}
+} */
 
 #fix_right_button {
     height: 64px;
@@ -514,6 +547,7 @@ ul,
 #fix_right_button .year {
     float: left;
     margin-top: 5px;
+    margin-left: 10px;
     /* margin-left: 5px;
     margin-right: 10px; */
     width: 11% !important;
@@ -558,14 +592,14 @@ ul,
 /* On mouse-over, add a grey background color */
 
 .container:hover input~.checkmark {
-    background-color: #f75b36;
+    background-color: rgb(168, 168, 168);
 }
 
 
 /* When the radio button is checked, add a blue background */
 
 .container input:checked~.checkmark {
-    background-color: #f75b36;
+    background-color: #4E73DF;
 }
 
 
@@ -601,7 +635,7 @@ ul,
 }
 
 #search_icds input {
-    height: 35px;
+    /* height: 35px;
     margin-right: 0px;
     width: 70%;
     float: left;
@@ -611,16 +645,43 @@ ul,
     border-top-left-radius: 5px;
     padding-left: 10px;
     color: rgb(79, 80, 98);
+    font-size: 16px; */
+    float: left;
+    height: 36px;
+    width: 85%;
+    border: none;
+    border: 1px solid #D1D3E0;
+    border-right: none;
+    border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /* border-top-right-radius: none;
+    border-bottom-right-radius: none; */
+    padding-left: 10px;
+    /* background-color: rgb(248, 249, 252); */
+    color: rgb(79, 80, 98);
     font-size: 16px;
 }
 
-#search_icds .submit {
-    height: 35px;
+#search_icds button {
+    /* height: 35px;
     width: 20%;
     float: left;
     margin-left: 0px;
     border: none;
     border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    float: right;
+    width: 15%;
+    height: 36px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    /* background-color: rgb(87, 113, 226); */
+    border-top-right-radius: 5px;
+    border-right: 1px solid #D1D3E0;
+    border-top: 1px solid #D1D3E0;
+    border-bottom: 1px solid #D1D3E0;
     border-bottom-right-radius: 5px;
 }
 
@@ -658,3 +719,41 @@ ul,
 
 
 /* Remove IE default X */
+
+
+/***custom scrollbar css***/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Track */
+
+
+/* ::-webkit-scrollbar-track {
+    border-radius: 4px;
+} */
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #4E73DF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: none;
+}
+
+
+/* Handle on hover */
+
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #4E73DF;
+} */
