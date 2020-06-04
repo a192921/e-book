@@ -247,7 +247,7 @@ ul,
     color: #000000;
     padding: 0px 15px 15px 0px;
     overflow: scroll;
-    height: 58vh;
+    height: 60vh;
     /*border-right: 2px solid rgb(242, 243, 246);
     border-bottom: 2px solid rgb(242, 243, 246);*/
 }
@@ -378,6 +378,7 @@ ul,
 #description {
     float: left;
     width: 80%;
+    padding-left: 10px;
 }
 
 #description #title {
@@ -536,7 +537,7 @@ ul,
     top: 0px;
     left: 58.5%;
     padding: 14px 18px 14px 17px;
-    width: 100%;
+    /* width: 100%; */
     margin-top: 56px;
     border: 0px;
     -webkit-box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
