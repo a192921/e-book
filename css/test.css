@@ -537,7 +537,7 @@ ul,
     top: 0px;
     left: 58.5%;
     padding: 14px 18px 14px 17px;
-    /* width: 100%; */
+    width: 100vh;
     margin-top: 56px;
     border: 0px;
     -webkit-box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
@@ -549,6 +549,7 @@ ul,
     float: left;
     margin-top: 5px;
     margin-left: 10px;
+    margin-right: 10px;
     /* margin-left: 5px;
     margin-right: 10px; */
     width: 11% !important;
@@ -557,6 +558,7 @@ ul,
 .container {
     display: block;
     position: relative;
+    margin-top: 5px;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
@@ -633,6 +635,8 @@ ul,
 
 #search_icds {
     float: left;
+    width: 35%;
+    margin-right: 10px;
 }
 
 #search_icds input {
