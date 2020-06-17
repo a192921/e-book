@@ -1,0 +1,779 @@
+body {
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: rgb(58, 59, 75) !important;
+    height: 56px;
+    padding: 0px 0px 0px 0px
+}
+
+#navbar-nav-ul {
+    margin-left: 0px;
+    height: 100%;
+}
+
+#navbar-nav-ul ul {
+    height: 100%;
+}
+
+#navbar-nav-ul ul li {
+    width: 160px;
+    text-align: center;
+}
+
+
+/* #navbar-nav-ul ul .small_li {
+    width: 100px;
+} */
+
+#navbar-nav-ul ul li .text {
+    margin-top: 16px;
+}
+
+#navbar-nav-ul ul li div a {
+    color: rgb(143, 143, 145);
+    font-size: 17px;
+}
+
+
+/* #navbar-nav-ul ul li:hover>div#bottom_line {
+    background-color: rgb(87, 113, 226) !important;
+} */
+
+#navbar-nav-ul ul li:hover>div a {
+    color: white !important;
+    font-weight: bold;
+}
+
+#navbar-nav-ul ul li:hover {
+    /* background-color: rgb(45, 46, 62) !important; */
+    background-color: #4E73DF;
+}
+
+#navbar-nav-ul ul li:active>div a {
+    color: white !important;
+    font-weight: bold;
+}
+
+#navbar-nav-ul ul li:active {
+    /* background-color: rgb(45, 46, 62) !important; */
+    background-color: #4E73DF;
+}
+
+#header_icon {
+    background-color: rgb(45, 46, 62);
+    padding: 15.74px 34.39px 13.62px 32.96px;
+    margin: 0px 0px 0px 0px;
+    height: 100%;
+}
+
+
+/* #header_icon a {
+    margin-left: 10px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 0px;
+} */
+
+
+/* #bottom_line {
+    height: 4px;
+    background-color: rgb(58, 59, 75);
+    margin-top: 6px;
+} */
+
+#close {
+    background-color: rgb(45, 46, 62);
+    float: right;
+    border: none;
+    position: absolute;
+    right: 0px;
+    width: 50px;
+    padding-top: 0px;
+    margin-top: 0px;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+#center_content {
+    margin-top: 56px;
+}
+
+#search_treeview {
+    margin-left: 0px;
+    border-right: 2px solid rgb(242, 243, 246);
+}
+
+#shadow {
+    background-color: white;
+    height: 64px;
+    /* box-shadow: 3px 3px 3px 3px rgb(240, 240, 240); */
+    padding: 14px 13px 14px 25px;
+    -webkit-box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
+}
+
+#shadow_right {
+    height: 36px;
+    border: 1px solid #D1D3E0;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+#shadow_right input {
+    float: left;
+    height: 100%;
+    width: 93%;
+    border: none;
+    border-right: none;
+    border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /* border-top-right-radius: none;
+    border-bottom-right-radius: none; */
+    padding-left: 10px;
+    /* background-color: rgb(248, 249, 252); */
+    color: rgb(79, 80, 98);
+    font-size: 16px;
+}
+/*
+#shadow_right textarea:focus, #shadow_right input:focus{
+    outline: none;
+}
+
+#shadow_right input:focus>#shadow_right{
+    background-color: yellow;
+    border: 1px solid;
+    color: #CCC;
+}
+*/
+
+
+
+
+#shadow_right button {
+    float: right;
+    width: 7%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    /* background-color: rgb(87, 113, 226); */
+    /* border-top-right-radius: 5px; */
+    /* border-right: 1px solid #D1D3E0;
+    border-top: 1px solid #D1D3E0;
+    border-bottom: 1px solid #D1D3E0;
+    border-bottom-right-radius: 5px; */
+}
+
+
+#list_treeview {
+    height: 150px;
+    color: #000000;
+    padding: 17px 15px 15px 33px;
+    overflow: scroll;
+    margin-top: 2px;
+    /*border-right: 2px solid rgb(242, 243, 246);*/
+    border-bottom: 1px solid rgb(242, 243, 246);
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.input_btn {
+    height: 50%;
+    margin-left: 6px;
+}
+
+ul,
+#myUL {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+#myUL {
+    margin: 0;
+    padding: 0;
+}
+
+.caret {
+    cursor: pointer;
+    -webkit-user-select: none;
+    /* Safari 3.1+ */
+    -moz-user-select: none;
+    /* Firefox 2+ */
+    -ms-user-select: none;
+    /* IE 10+ */
+    user-select: none;
+}
+
+.caret::before {
+    content: "\25B6";
+    color: rgb(193, 194, 214);
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.caret-down::before {
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(90deg);
+    /* Safari */
+    transform: rotate(90deg);
+}
+
+.nested {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.nested li {
+    padding-left: 5px;
+}
+
+#myUL a {
+    font-size: 17px;
+    line-height: 19px;
+}
+
+#myUL .a_type1 {
+    color: rgb(100, 125, 229);
+}
+
+#myUL .a_type2 {
+    color: blackxs;
+}
+
+#search_filter button {
+    float: right;
+    width: 5%;
+    height: 40px;
+    border: none;
+    background-color: rgb(87, 113, 226);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#filter_list {
+    color: #000000;
+    padding: 0px 15px 15px 0px;
+    overflow: scroll;
+    height: 60vh;
+    /*border-right: 2px solid rgb(242, 243, 246);
+    border-bottom: 2px solid rgb(242, 243, 246);*/
+}
+
+#filter_list ul {
+    padding-top: 6px;
+    padding-left: 0px;
+}
+
+#filter_list ul li .type_blue {
+    color: rgb(100, 125, 229);
+}
+
+#filter_list ul li .type_black {
+    color: black;
+}
+
+#div_left_list {
+    overflow: scroll;
+    margin-left: 0px;
+    padding-left: 0px;
+    height: 92vh;
+    background-color: rgba(0, 0, 0, 0.02);
+    /* background-color: green; */
+}
+
+#div_right {
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#search_and_filter {
+    padding-left: 30px;
+}
+
+#search_filter {
+    margin: 10px 13px 0px 0px;
+    height: 50px;
+}
+
+
+/* #search_filter_left {
+    float: left;
+    width: 7%;
+    margin-left: 0px !important;
+    padding-left: 0px;
+} */
+
+
+/* #search_filter_left button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 65px;
+    margin: 0px 0px 0px 20px;
+    border: solid 1px rgb(211, 211, 211);
+}
+
+#search_filter_left button a {
+    color: rgb(211, 211, 211);
+} */
+
+#search_filter_right {
+    /* float: right; */
+    width: 100%;
+    margin-left: 0px !important;
+}
+
+#search_filter_right input {
+    float: left;
+    height: 36px;
+    width: 93%;
+    border: none;
+    border: 1px solid #D1D3E0;
+    border-right: none;
+    border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /* border-top-right-radius: none;
+    border-bottom-right-radius: none; */
+    padding-left: 10px;
+    /* background-color: rgb(248, 249, 252); */
+    color: rgb(79, 80, 98);
+    font-size: 16px;
+}
+
+#search_filter_right button {
+    float: right;
+    width: 7%;
+    height: 36px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    /* background-color: rgb(87, 113, 226); */
+    border-top-right-radius: 5px;
+    border-right: 1px solid #D1D3E0;
+    border-top: 1px solid #D1D3E0;
+    border-bottom: 1px solid #D1D3E0;
+    border-bottom-right-radius: 5px;
+}
+
+#left_list {
+    padding-left: 0px;
+    background-color: rgb(248, 249, 252);
+}
+
+.left_list_item {
+    width: 100%;
+    border-top: 1px solid #D1D3E0;
+    margin-top: 5px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#k_id {
+    height: 10;
+    width: 20%;
+    float: left;
+    font-size: 18px;
+    padding: 2px;
+    height: 100%;
+}
+
+#description {
+    float: left;
+    width: 80%;
+    padding-left: 10px;
+}
+
+#description #title {
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
+#description .description_pink {
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px rgb(250, 191, 197) solid;
+    border-radius: 3px;
+    color: rgb(234, 101, 202);
+    background-color: rgb(252, 212, 216);
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_blue {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px rgb(188, 218, 255) solid;
+    border-radius: 3px;
+    color: rgb(87, 152, 252);
+    background-color: rgb(209, 229, 255);
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_lightblue {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #d2f9ff solid;
+    border-radius: 3px;
+    color: #51a8ff;
+    background-color: #defbff;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_lightyellow {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #ffeeba solid;
+    border-radius: 3px;
+    color: #ffc20b;
+    background-color: #fff3cd;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_green {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #c3e6cb solid;
+    border-radius: 3px;
+    color: #95c7a0;
+    background-color: #e4ffeb;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_yellow {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #fade03 solid;
+    border-radius: 3px;
+    color: #b2a220;
+    background-color: #fce957;
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_gray {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px #d6d8db solid;
+    border-radius: 3px;
+    color: #545666;
+    background-color: #e2e3e5;
+    padding-left: 3px;
+    padding-right: 2px;
+    text-align: center;
+}
+
+#description .description_incloud_pink {
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px rgb(250, 191, 197) solid;
+    border-radius: 3px;
+    color: rgb(234, 101, 202);
+    background-color: rgb(252, 212, 216);
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description .description_incloudblue {
+    margin-top: 0px;
+    font-style: italic;
+    line-height: 28px;
+    font-size: 16px;
+    border: 1px rgb(188, 218, 255) solid;
+    border-radius: 3px;
+    color: rgb(87, 152, 252);
+    background-color: rgb(209, 229, 255);
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+#description ul {
+    list-style-type: disc !important;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: -1em;
+    margin-bottom: 0px;
+}
+
+
+/* #fix_up_button {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 50px;
+    left: 51%;
+}
+
+#fix_up_button button {
+    border: none;
+    height: 50px;
+    width: 50px;
+    background-color: #a6b8ef;
+    border-radius: 5px
+} */
+
+#fix_right_button {
+    height: 64px;
+    background-color: rgba(255, 255, 255);
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    /* position: fixed; */
+    /* bottom: 0px; */
+    top: 0px;
+    left: 58.5%;
+    padding: 14px 18px 14px 17px;
+    width: 100vh;
+    margin-top: 56px;
+    border: 0px;
+    -webkit-box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
+}
+
+#fix_right_button .year {
+    float: left;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* margin-left: 5px;
+    margin-right: 10px; */
+    width: 10% !important;
+}
+
+.container {
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: rgb(168, 168, 168);
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: #4E73DF;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.container .checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+#search_icds {
+    float: left;
+    width: 32%;
+    margin-right: 10px;
+}
+
+#search_icds input {
+    /* height: 35px;
+    margin-right: 0px;
+    width: 70%;
+    float: left;
+    border: none;
+    background-color: #fff9f7;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-left: 10px;
+    color: rgb(79, 80, 98);
+    font-size: 16px; */
+    float: left;
+    height: 36px;
+    width: 85%;
+    border: none;
+    border: 1px solid #D1D3E0;
+    border-right: none;
+    border-radius: 0px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    /* border-top-right-radius: none;
+    border-bottom-right-radius: none; */
+    padding-left: 10px;
+    /* background-color: rgb(248, 249, 252); */
+    color: rgb(79, 80, 98);
+    font-size: 16px;
+}
+
+#search_icds button {
+    /* height: 35px;
+    width: 20%;
+    float: left;
+    margin-left: 0px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    float: right;
+    width: 15%;
+    height: 36px;
+    border: none;
+    background-color: #fff;
+    color: black;
+    /* background-color: rgb(87, 113, 226); */
+    border-top-right-radius: 5px;
+    border-right: 1px solid #D1D3E0;
+    border-top: 1px solid #D1D3E0;
+    border-bottom: 1px solid #D1D3E0;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* Clearable text inputs */
+
+.clearable {
+    background: #fff url(http://i.stack.imgur.com/mJotv.gif) no-repeat right -10px center;
+    border: 1px solid #999;
+    padding: 3px 18px 3px 4px;
+    /* Use the same right padding (18) in jQ! */
+    border-radius: 3px;
+    transition: background 0.4s;
+}
+
+.clearable.x {
+    background-position: right 15px center;
+}
+
+
+/* (jQ) Show icon */
+
+.clearable.onX {
+    cursor: pointer;
+}
+
+
+/* (jQ) hover cursor style */
+
+.clearable::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+
+/* Remove IE default X */
+
+
+/***custom scrollbar css***/
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Track */
+
+
+/* ::-webkit-scrollbar-track {
+    border-radius: 4px;
+} */
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #4E73DF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: none;
+}
+
+
+/* Handle on hover */
+
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #4E73DF;
+} */

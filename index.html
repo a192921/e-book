@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./css/test.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -30,27 +30,22 @@
                     <ul class="nav navbar-nav">
                         <li class="small_li" style="width:107px;">
                             <div class="text"><a>Index</a></div>
-                            <!-- <div id="bottom_line"></div> -->
                         </li>
-                        <li class="small_li" style="width:135px;">
+                        <li class="small_li" style="width:130px;">
                             <div class="text"><a>Diagnosis</a></div>
-                            <!-- <div id="bottom_line"></div> -->
                         </li>
-                        <li style="width:173px;">
+                        <li style="width:170px;">
                             <div class="text"><a>External Cause</a></div>
-                            <!-- <div id="bottom_line"></div> -->
                         </li>
-                        <li class="small_li" style="width:139px;">
+                        <li class="small_li" style="width:130px;">
                             <div class="text"><a>Neoplasm</a></div>
-                            <!-- <div id="bottom_line"></div> -->
                         </li>
-                        <li style="width:164px;">
+                        <li style="width:160px;">
                             <div class="text"><a>ICD0 to ICD10</a></div>
                             <div id="bottom_line"></div>
                         </li>
                         <li class="small_li" style="width:111px;">
                             <div class="text"><a>虛擬碼</a></div>
-                            <!-- <div id="bottom_line"></div> -->
                         </li>
 
                     </ul>
@@ -64,13 +59,18 @@
     </div>
 
     <div id="center_content" class="row">
+
+
+
+
+
         <div class="col-lg-7 col-md-7 col-sm-7" id="div_right">
             <div id="search_treeview">
                 <div id="shadow">
                     <div id="shadow_left" style="width: 7%;float: left;"><button style="border: solid 1px rgb(211, 211, 211);height: 36px;width: 90%;border-radius: 5px;margin: 0px 50px 0px 0px;background-color: rgb(255, 255, 255);"><img src="./img/Path 15.svg"></button></div>
                     <div id="shadow_right" style="width: 93%;float: right;">
 
-                        <input class="clearable" type="text" placeholder="Type at least 4 characters" name="search">
+                        <input id="text_input" class="clearable" type="text" placeholder="Type at least 4 characters" name="search">
                         <button type="submit"><img src="./img/search icon.svg" height="20"></button>
                     </div>
                 </div>
@@ -98,9 +98,7 @@
 
                 <div id="search_and_filter">
                     <div id="search_filter">
-                        <!-- <div id="search_filter_left">
-                            <button><a><strong><</strong></a></button>
-                        </div> -->
+
                         <div id="search_filter_right">
                             <input class="clearable" type="text" placeholder="依文字尋找或塞選" name="search">
                             <button type="submit" onclick="myFunction()" style="width: 7%;"><img src="./img/Fillter icon.svg" height="20"></button>
@@ -126,9 +124,7 @@
                             <li><a class="type_blue">Hyperacsis</a><a class="type_black"> H93.23-Hypercholesterinemia - see </a><a class="type_blue">Hypercholesterinemia</a></li>
 
                         </ul>
-                        <!-- <div id="fix_up_button">
-                            <button type="submit" onclick="window.location.href = '#li_1'"><img src="./img/up-arrow.svg" height="20"></button>
-                        </div> -->
+            
                     </div>
                 </div>
             </div>
@@ -400,14 +396,15 @@
                 </div>
                 <div class="year">
                     <label class="container">2014
-                     <input type="radio" checked="checked" name="radio">
-                     <span class="checkmark"></span>
+                     <input type="radio" checked="checked" name="radio"style="margin-top: 2px;">
+                     <span class="checkmark"style="margin-top: 2px;"></span>
                    </label>
                 </div>
                 <div class="year">
-                    <label class="container">2019
-                     <input type="radio" name="radio">
-                     <span class="checkmark"></span>
+                    <label class="container">
+                        <a >2019</a>
+                     <input type="radio" name="radio" style="margin-top: 2px;">
+                     <span class="checkmark" style="margin-top: 2px;"></span>
                    </label>
                 </div>
 
@@ -473,6 +470,10 @@
             ev.preventDefault();
             $(this).removeClass('x onX').val('').change();
         });
+
+        document.getElementById('#text_input').focus = function () {
+    document.getElementById('#shadow_right').focus();
+};
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
