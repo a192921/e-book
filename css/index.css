@@ -68,22 +68,6 @@ body {
     height: 100%;
 }
 
-
-/* #header_icon a {
-    margin-left: 10px;
-    font-size: 26px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    padding-top: 0px;
-} */
-
-
-/* #bottom_line {
-    height: 4px;
-    background-color: rgb(58, 59, 75);
-    margin-top: 6px;
-} */
-
 #close {
     background-color: rgb(45, 46, 62);
     float: right;
@@ -117,11 +101,46 @@ body {
     box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
 }
 
+#shadow_left button {
+    border: solid 1px rgb(211, 211, 211);
+    height: 36px;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0px 50px 0px 0px;
+    background-color: #fff;
+}
+
+#shadow_left button:hover {
+    background-color: #4E73DF;
+    border: 3px solid #4E73DF;
+}
+
+#shadow_left .a {
+    fill: none;
+    stroke: #4e73df;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.5px;
+}
+
+#shadow_left:hover .a,
+#shadow_left:hover~.a {
+    fill: none;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.5px;
+}
+
 #shadow_right {
     height: 36px;
     border: 1px solid #D1D3E0;
     border-radius: 4px;
     padding: 1px;
+}
+
+#shadow_right:hover {
+    border: 1px solid #4E73DF;
 }
 
 #shadow_right input {
@@ -133,27 +152,10 @@ body {
     border-radius: 0px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    /* border-top-right-radius: none;
-    border-bottom-right-radius: none; */
     padding-left: 10px;
-    /* background-color: rgb(248, 249, 252); */
     color: rgb(79, 80, 98);
     font-size: 16px;
 }
-/*
-#shadow_right textarea:focus, #shadow_right input:focus{
-    outline: none;
-}
-
-#shadow_right input:focus>#shadow_right{
-    background-color: yellow;
-    border: 1px solid;
-    color: #CCC;
-}
-*/
-
-
-
 
 #shadow_right button {
     float: right;
@@ -161,14 +163,7 @@ body {
     height: 100%;
     border: none;
     background-color: #fff;
-    /* background-color: rgb(87, 113, 226); */
-    /* border-top-right-radius: 5px; */
-    /* border-right: 1px solid #D1D3E0;
-    border-top: 1px solid #D1D3E0;
-    border-bottom: 1px solid #D1D3E0;
-    border-bottom-right-radius: 5px; */
 }
-
 
 #list_treeview {
     height: 150px;
@@ -263,13 +258,13 @@ ul,
     padding: 0px 15px 15px 0px;
     overflow: scroll;
     height: 60vh;
-    /*border-right: 2px solid rgb(242, 243, 246);
-    border-bottom: 2px solid rgb(242, 243, 246);*/
 }
 
 #filter_list ul {
     padding-top: 6px;
     padding-left: 0px;
+    font-size: 17px;
+    line-height: 26px;
 }
 
 #filter_list ul li .type_blue {
@@ -287,6 +282,7 @@ ul,
     padding-right: 0px;
     height: 92vh;
     background-color: rgba(0, 0, 0, 0.02);
+    margin-top: 64px;
     /* background-color: green; */
 }
 
@@ -294,7 +290,6 @@ ul,
     margin-right: 0px;
     padding-right: 0px;
     padding-left: 0px;
-    
 }
 
 #search_and_filter {
@@ -306,47 +301,29 @@ ul,
     height: 50px;
 }
 
-
-/* #search_filter_left {
-    float: left;
-    width: 7%;
-    margin-left: 0px !important;
-    padding-left: 0px;
-} */
-
-
-/* #search_filter_left button {
-    background-color: rgb(255, 255, 255);
-    border-radius: 5px;
-    width: 65px;
-    margin: 0px 0px 0px 20px;
-    border: solid 1px rgb(211, 211, 211);
+#search_filter_right {
+    /* width: 200%; */
+    /* margin-left: 0px !important; */
+    height: 36px;
+    border: 1px solid #D1D3E0;
+    border-radius: 4px;
+    padding: 1px;
 }
 
-#search_filter_left button a {
-    color: rgb(211, 211, 211);
-} */
-
-#search_filter_right {
-    /* float: right; */
-    width: 100%;
-    margin-left: 0px !important;
+#search_filter_right:hover {
+    border: 1px solid #4E73DF;
 }
 
 #search_filter_right input {
     float: left;
-    height: 36px;
+    height: 100%;
     width: 93%;
     border: none;
-    border: 1px solid #D1D3E0;
     border-right: none;
     border-radius: 0px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    /* border-top-right-radius: none;
-    border-bottom-right-radius: none; */
     padding-left: 10px;
-    /* background-color: rgb(248, 249, 252); */
     color: rgb(79, 80, 98);
     font-size: 16px;
 }
@@ -354,16 +331,9 @@ ul,
 #search_filter_right button {
     float: right;
     width: 7%;
-    height: 36px;
+    height: 100%;
     border: none;
     background-color: #fff;
-    color: black;
-    /* background-color: rgb(87, 113, 226); */
-    border-top-right-radius: 5px;
-    border-right: 1px solid #D1D3E0;
-    border-top: 1px solid #D1D3E0;
-    border-bottom: 1px solid #D1D3E0;
-    border-bottom-right-radius: 5px;
 }
 
 #left_list {
@@ -380,15 +350,17 @@ ul,
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 5px;
-    padding-left:10px;
+    padding-left: 10px;
     padding-bottom: 5px;
+    padding-right: 5px;
 }
 
 #k_id {
     height: 10;
     width: 20%;
     float: left;
-    font-size: 18px;
+    font-size: 17px;
+    line-height: 26px;
     padding: 2px;
     height: 100%;
     color: rgb(84, 116, 208);
@@ -530,23 +502,6 @@ ul,
     margin-bottom: 0px;
 }
 
-
-/* #fix_up_button {
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    bottom: 50px;
-    left: 51%;
-}
-
-#fix_up_button button {
-    border: none;
-    height: 50px;
-    width: 50px;
-    background-color: #a6b8ef;
-    border-radius: 5px
-} */
-
 #fix_right_button {
     height: 64px;
     background-color: rgba(255, 255, 255);
@@ -556,10 +511,10 @@ ul,
     top: 0px;
     left: 58.5%;
     padding: 14px 18px 14px 17px;
-    width: 100vh;
+    width: 70vw;
     margin-top: 56px;
     border: 0px;
-    margin-left: 1px;
+    margin-left: 0px;
     -webkit-box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 6px 13px -10px rgba(0, 0, 0, 0.75);
@@ -657,64 +612,43 @@ ul,
     float: left;
     width: 32%;
     margin-right: 10px;
+    height: 36px;
+    border: 1px solid #D1D3E0;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+#search_icds:hover {
+    border: 1px solid #4E73DF;
 }
 
 #search_icds input {
-    /* height: 35px;
-    margin-right: 0px;
-    width: 70%;
     float: left;
-    border: none;
-    background-color: #fff9f7;
-    border-top-left-radius: 5px;
-    border-top-left-radius: 5px;
-    padding-left: 10px;
-    color: rgb(79, 80, 98);
-    font-size: 16px; */
-    float: left;
-    height: 36px;
+    height: 100%;
     width: 85%;
     border: none;
-    border: 1px solid #D1D3E0;
     border-right: none;
     border-radius: 0px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
-    /* border-top-right-radius: none;
-    border-bottom-right-radius: none; */
     padding-left: 10px;
-    /* background-color: rgb(248, 249, 252); */
     color: rgb(79, 80, 98);
     font-size: 16px;
 }
 
 #search_icds button {
-    /* height: 35px;
-    width: 20%;
-    float: left;
-    margin-left: 0px;
-    border: none;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px; */
     float: right;
     width: 15%;
-    height: 36px;
+    height: 100%;
     border: none;
     background-color: #fff;
-    color: black;
-    /* background-color: rgb(87, 113, 226); */
-    border-top-right-radius: 5px;
-    border-right: 1px solid #D1D3E0;
-    border-top: 1px solid #D1D3E0;
-    border-bottom: 1px solid #D1D3E0;
-    border-bottom-right-radius: 5px;
 }
 
 
 /* Clearable text inputs */
 
 .clearable {
-    background: #fff url(http://i.stack.imgur.com/mJotv.gif) no-repeat right -10px center;
+    background: #fff url(../img/Corss-small.svg) no-repeat right -15px center;
     border: 1px solid #999;
     padding: 3px 18px 3px 4px;
     /* Use the same right padding (18) in jQ! */
@@ -723,7 +657,7 @@ ul,
 }
 
 .clearable.x {
-    background-position: right 15px center;
+    background-position: right 5px center;
 }
 
 
@@ -783,6 +717,18 @@ ul,
     background: #4E73DF;
 } */
 
-.left_list_item:hover{
-    background-color:rgb(230, 230, 239);
+.left_list_item:hover {
+    background-color: rgb(230, 230, 239);
+}
+
+input[type="text"],
+textarea,
+select {
+    outline: none;
+}
+
+button[type="submit"],
+textarea,
+select {
+    outline: none;
 }

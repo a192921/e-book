@@ -15,6 +15,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -51,7 +52,15 @@
                     </ul>
 
                 </div>
-                <button id="close">X</button>
+                <button id="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                        <defs>
+                        <style>.a{fill:#ffffff;}
+                        </style>
+                        </defs>
+                        <path class="a" d="M328.339,253.971l3.94-3.939a1.5,1.5,0,0,0-2.121-2.121l-3.94,3.939-3.939-3.939a1.5,1.5,0,1,0-2.121,2.121l3.939,3.939-3.939,3.94a1.5,1.5,0,0,0,2.121,2.121l3.939-3.94,3.94,3.94a1.5,1.5,0,0,0,2.121-2.121Z" transform="translate(-319.719 -247.471)"/>
+                        </svg>
+                </button>
 
 
             </nav>
@@ -64,14 +73,22 @@
 
 
 
-        <div class="col-lg-7 col-md-7 col-sm-7" id="div_right" style="border-right: 2px rgb(84, 116, 208) solid;">
+        <div class="col-lg-7 col-md-7 col-sm-7" id="div_right" style="border-right: 1px rgb(84, 116, 208) solid;">
             <div id="search_treeview">
                 <div id="shadow">
-                    <div id="shadow_left" style="width: 7%;float: left;"><button style="border: solid 1px rgb(211, 211, 211);height: 36px;width: 90%;border-radius: 5px;margin: 0px 50px 0px 0px;background-color: rgb(255, 255, 255);"><img src="./img/Path 15.svg"></button></div>
+                    <div id="shadow_left" style="width: 7%;float: left;">
+                        <button id="up_lev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="9.517" height="15.312" viewBox="0 0 9.517 15.312">
+                                <path class="a" d="M59.174,480l-6.5,6.174,6.5,5.608" transform="translate(-51.424 -478.233)"/>
+                                </svg>
+                        </button>
+                    </div>
                     <div id="shadow_right" style="width: 93%;float: right;">
 
                         <input id="text_input" class="clearable" type="text" placeholder="Type at least 4 characters" name="search">
-                        <button type="submit"><img src="./img/search icon.svg" height="20"></button>
+                        <button type="submit">
+                            <img src="./img/search icon.svg" height="20">
+                        </button>
                     </div>
                 </div>
                 <div>
@@ -124,7 +141,7 @@
                             <li><a class="type_blue">Hyperacsis</a><a class="type_black"> H93.23-Hypercholesterinemia - see </a><a class="type_blue">Hypercholesterinemia</a></li>
 
                         </ul>
-            
+
                     </div>
                 </div>
             </div>
@@ -132,7 +149,8 @@
 
 
         <div id="div_left_list" class="col-lg-5 col-md-5 col-sm-5">
-            <div class="position-fixed" id="fix_right_button" >
+
+            <div class="position-fixed" id="fix_right_button">
                 <div id="search_icds">
                     <input id="icd" class="clearable" type="text" name="" value="" placeholder="Search for ICDs" />
                     <button class="submit" type="submit"><img src="./img/search icon.svg"></button>
@@ -157,7 +175,7 @@
             <div id="left_list">
                 <div class="left_list_item">
 
-                    <div id="k_id">K99.99
+                    <div id="k_id">K99.91
                         <img class="input_btn" src="./img/input btn.svg">
                     </div>
                     <div id="description">
@@ -180,7 +198,7 @@
             </div>
             <div id="left_list">
                 <div class="left_list_item">
-                    <div id="k_id">K99.99
+                    <div id="k_id">K99.92
                         <img class="input_btn" src="./img/input btn.svg">
                     </div>
                     <div id="description">
@@ -203,7 +221,7 @@
             </div>
             <div id="left_list">
                 <div class="left_list_item">
-                    <div id="k_id">K99.99
+                    <div id="k_id">K99.93
                         <img class="input_btn" src="./img/input btn.svg">
                     </div>
                     <div id="description">
@@ -227,7 +245,7 @@
             </div>
             <div id="left_list">
                 <div class="left_list_item">
-                    <div id="k_id">K99.99
+                    <div id="k_id">K99.94
                         <img class="input_btn" src="./img/input btn.svg">
                     </div>
                     <div id="description">
@@ -250,7 +268,76 @@
             </div>
             <div id="left_list">
                 <div class="left_list_item">
-                    <div id="k_id">K99.99
+                    <div id="k_id">K99.95
+                        <img class="input_btn" src="./img/input btn.svg">
+                    </div>
+                    <div id="description">
+                        <span id="title">Other diseases of
+    esophagus</span><br />
+                        <span id="title">胃及十二指腸其他疾病</span><br />
+                        <span class="description_pink">
+    incl.</span><br />
+                        <ul>
+                            <li>function disorders of stomach</li>
+                        </ul>
+                        <span class="description_blue">
+    EXcl.2</span><br />
+                        <ul>
+                            <li>diabetic gastroparesos (E08.43, E09.43,E11.43, E13.43)</li>
+                            <li>diabetic gastroparesos (K57.00-K57.13)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="left_list">
+                <div class="left_list_item">
+                    <div id="k_id">K99.96
+                        <img class="input_btn" src="./img/input btn.svg">
+                    </div>
+                    <div id="description">
+                        <span id="title">Other diseases of
+    esophagus</span><br />
+                        <span id="title">胃及十二指腸其他疾病</span><br />
+                        <span class="description_pink">
+    incl.</span><br />
+                        <ul>
+                            <li>function disorders of stomach</li>
+                        </ul>
+                        <span class="description_blue">
+    EXcl.2</span><br />
+                        <ul>
+                            <li>diabetic gastroparesos (E08.43, E09.43,E11.43, E13.43)</li>
+                            <li>diabetic gastroparesos (K57.00-K57.13)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="left_list">
+                <div class="left_list_item">
+                    <div id="k_id">K99.97
+                        <img class="input_btn" src="./img/input btn.svg">
+                    </div>
+                    <div id="description">
+                        <span id="title">Other diseases of
+    esophagus</span><br />
+                        <span id="title">胃及十二指腸其他疾病</span><br />
+                        <span class="description_pink">
+    incl.</span><br />
+                        <ul>
+                            <li>function disorders of stomach</li>
+                        </ul>
+                        <span class="description_blue">
+    EXcl.2</span><br />
+                        <ul>
+                            <li>diabetic gastroparesos (E08.43, E09.43,E11.43, E13.43)</li>
+                            <li>diabetic gastroparesos (K57.00-K57.13)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="left_list">
+                <div class="left_list_item">
+                    <div id="k_id">K99.98
                         <img class="input_btn" src="./img/input btn.svg">
                     </div>
                     <div id="description">
@@ -296,7 +383,7 @@
             </div>
             <div id="left_list">
                 <div class="left_list_item">
-                    <div id="k_id">K99.99
+                    <div id="k_id">K99.90
                         <img class="input_btn" src="./img/input btn.svg">
                     </div>
                     <div id="description">
@@ -319,7 +406,7 @@
             </div>
             <div id="left_list">
                 <div class="left_list_item">
-                    <div id="k_id">K99.99
+                    <div id="k_id">K99.71
                         <img class="input_btn" src="./img/input btn.svg">
                     </div>
                     <div id="description">
@@ -340,76 +427,7 @@
                     </div>
                 </div>
             </div>
-            <div id="left_list">
-                <div class="left_list_item">
-                    <div id="k_id">K99.99
-                        <img class="input_btn" src="./img/input btn.svg">
-                    </div>
-                    <div id="description">
-                        <span id="title">Other diseases of
-    esophagus</span><br />
-                        <span id="title">胃及十二指腸其他疾病</span><br />
-                        <span class="description_pink">
-    incl.</span><br />
-                        <ul>
-                            <li>function disorders of stomach</li>
-                        </ul>
-                        <span class="description_blue">
-    EXcl.2</span><br />
-                        <ul>
-                            <li>diabetic gastroparesos (E08.43, E09.43,E11.43, E13.43)</li>
-                            <li>diabetic gastroparesos (K57.00-K57.13)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="left_list">
-                <div class="left_list_item">
-                    <div id="k_id">K99.99
-                        <img class="input_btn" src="./img/input btn.svg">
-                    </div>
-                    <div id="description">
-                        <span id="title">Other diseases of
-    esophagus</span><br />
-                        <span id="title">胃及十二指腸其他疾病</span><br />
-                        <span class="description_pink">
-    incl.</span><br />
-                        <ul>
-                            <li>function disorders of stomach</li>
-                        </ul>
-                        <span class="description_blue">
-    EXcl.2</span><br />
-                        <ul>
-                            <li>diabetic gastroparesos (E08.43, E09.43,E11.43, E13.43)</li>
-                            <li>diabetic gastroparesos (K57.00-K57.13)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="left_list">
-                <div class="left_list_item">
-                    <div id="k_id">K99.99
-                        <img class="input_btn" src="./img/input btn.svg">
-                    </div>
-                    <div id="description">
-                        <span id="title">Other diseases of
-    esophagus</span><br />
-                        <span id="title">胃及十二指腸其他疾病</span><br />
-                        <span class="description_pink">
-    incl.</span><br />
-                        <ul>
-                            <li>function disorders of stomach</li>
-                        </ul>
-                        <span class="description_blue">
-    EXcl.2</span><br />
-                        <ul>
-                            <li>diabetic gastroparesos (E08.43, E09.43,E11.43, E13.43)</li>
-                            <li>diabetic gastroparesos (K57.00-K57.13)</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-<!--
+            <!--
             <div class="position-fixed" id="fix_right_button">
                 <div id="search_icds">
                     <input id="icd" class="clearable" type="text" name="" value="" placeholder="Search for ICDs" />
@@ -492,9 +510,9 @@
             $(this).removeClass('x onX').val('').change();
         });
 
-        document.getElementById('#text_input').focus = function () {
-    document.getElementById('#shadow_right').focus();
-};
+        document.getElementById('#text_input').focus = function() {
+            document.getElementById('#shadow_right').focus();
+        };
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
