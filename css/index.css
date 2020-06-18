@@ -104,7 +104,7 @@ body {
 
 #search_treeview {
     margin-left: 0px;
-    border-right: 2px solid rgb(242, 243, 246);
+    /*border-right: 2px solid rgb(242, 243, 246);*/
 }
 
 #shadow {
@@ -290,7 +290,7 @@ ul,
 }
 
 #div_right {
-    margin-right: 0px;
+    fmargin-right: 0px;
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -374,10 +374,11 @@ ul,
     border-top: 1px solid #D1D3E0;
     margin-top: 5px;
     float: left;
-    margin-top: 5px;
-    margin-left: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
     margin-right: 10px;
     padding-top: 5px;
+    padding-left:10px;
     padding-bottom: 5px;
 }
 
@@ -388,6 +389,7 @@ ul,
     font-size: 18px;
     padding: 2px;
     height: 100%;
+    color: rgb(84, 116, 208);
 }
 
 #description {
@@ -777,3 +779,7 @@ ul,
 /* ::-webkit-scrollbar-thumb:hover {
     background: #4E73DF;
 } */
+
+.left_list_item:hover{
+    background-color:rgb(230, 230, 239);
+}
