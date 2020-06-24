@@ -28,11 +28,12 @@ body {
 } */
 
 #navbar-nav-ul ul li .text {
-    margin-top: 16px;
+    margin-top: 20px;
+    margin-bottom: 17px;
 }
 
 #navbar-nav-ul ul li div a {
-    color: rgb(143, 143, 145);
+    color: #AFB5CB;
     font-size: 17px;
 }
 
@@ -49,6 +50,7 @@ body {
 #navbar-nav-ul ul li:hover {
     /* background-color: rgb(45, 46, 62) !important; */
     background-color: #4E73DF;
+    height: inherit;
 }
 
 #navbar-nav-ul ul li:active>div a {
@@ -63,9 +65,14 @@ body {
 
 #header_icon {
     background-color: rgb(45, 46, 62);
-    padding: 15.74px 34.39px 13.62px 32.96px;
+    padding: 15.74px 34.39px 13.62px 20.96px;
     margin: 0px 0px 0px 0px;
     height: 100%;
+}
+
+#header_icon img {
+    float: left;
+    padding-top: 2px;
 }
 
 #close {
@@ -137,6 +144,7 @@ body {
     border: 1px solid #D1D3E0;
     border-radius: 4px;
     padding: 1px;
+    padding-right: 15px !important;
 }
 
 #shadow_right:hover {
@@ -146,23 +154,43 @@ body {
 #shadow_right input {
     float: left;
     height: 100%;
-    width: 93%;
+    width: calc(100% + -32px);
     border: none;
     border-right: none;
     border-radius: 0px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     padding-left: 10px;
-    color: rgb(79, 80, 98);
+    color: #34364A;
     font-size: 16px;
+}
+
+
+/* placeholder color and type */
+
+::placeholder {
+    color: #AFB5CB;
+    opacity: 1;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #AFB5CB;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #AFB5CB;
 }
 
 #shadow_right button {
     float: right;
-    width: 7%;
+    /* width: 7%; */
     height: 100%;
     border: none;
     background-color: #fff;
+    padding-right: 0px;
 }
 
 #list_treeview {
@@ -174,6 +202,7 @@ body {
     /*border-right: 2px solid rgb(242, 243, 246);*/
     border-bottom: 1px solid rgb(242, 243, 246);
     background-color: rgba(0, 0, 0, 0.02);
+    /* background: #F8F9FC 0% 0% no-repeat padding-box; */
 }
 
 .input_btn {
@@ -245,12 +274,10 @@ ul,
 
 #search_filter button {
     float: right;
-    width: 5%;
-    height: 40px;
+    height: 100%;
     border: none;
-    background-color: rgb(87, 113, 226);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    background-color: #fff;
+    padding: 0px;
 }
 
 #filter_list {
@@ -281,6 +308,7 @@ ul,
     padding-left: 0px;
     padding-right: 0px;
     height: 92vh;
+    /* min-height: initial; */
     background-color: rgba(0, 0, 0, 0.02);
     margin-top: 64px;
     /* background-color: green; */
@@ -308,6 +336,7 @@ ul,
     border: 1px solid #D1D3E0;
     border-radius: 4px;
     padding: 1px;
+    padding-right: 15px !important;
 }
 
 #search_filter_right:hover {
@@ -317,20 +346,20 @@ ul,
 #search_filter_right input {
     float: left;
     height: 100%;
-    width: 93%;
+    width: calc(100% + -32px);
     border: none;
     border-right: none;
     border-radius: 0px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     padding-left: 10px;
-    color: rgb(79, 80, 98);
+    color: #34364A;
     font-size: 16px;
 }
 
 #search_filter_right button {
     float: right;
-    width: 7%;
+    /* width: 7%; */
     height: 100%;
     border: none;
     background-color: #fff;
@@ -524,7 +553,8 @@ ul,
     margin-right: 10px;
     /* margin-left: 5px;
     margin-right: 10px; */
-    width: 10% !important;
+    /* width: 10% !important; */
+    width: 65px;
 }
 
 .container {
@@ -613,6 +643,7 @@ ul,
     border: 1px solid #D1D3E0;
     border-radius: 4px;
     padding: 1px;
+    padding-right: 15px !important;
 }
 
 #search_icds:hover {
@@ -622,23 +653,25 @@ ul,
 #search_icds input {
     float: left;
     height: 100%;
-    width: 85%;
+    width: calc(100% + -32px);
     border: none;
     border-right: none;
     border-radius: 0px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     padding-left: 10px;
-    color: rgb(79, 80, 98);
+    color: #34364A;
     font-size: 16px;
 }
 
 #search_icds button {
     float: right;
-    width: 15%;
+    /* width: 15%; */
     height: 100%;
     border: none;
     background-color: #fff;
+    padding-right: 0px;
+    float: right;
 }
 
 
@@ -650,7 +683,7 @@ ul,
     padding: 3px 18px 3px 4px;
     /* Use the same right padding (18) in jQ! */
     border-radius: 3px;
-    transition: background 0.4s;
+    transition: background 0.2s;
 }
 
 .clearable.x {
