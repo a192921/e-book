@@ -284,7 +284,7 @@ ul,
     color: #000000;
     padding: 0px 15px 15px 0px;
     overflow: scroll;
-    height: 60vh;
+    height: calc(99vh - 310px) !important
 }
 
 #filter_list ul {
